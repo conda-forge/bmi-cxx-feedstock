@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/csdms/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: b2c7bb06bd77501968575d66f75a67d81a12b927f81eb730e9a00896d9572f83
+  sha256: 49444c1b45b1bf5d8af48a17afc559a1552f4cbef15549edb4eb0453c41ada02
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
