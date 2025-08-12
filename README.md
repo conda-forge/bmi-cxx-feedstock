@@ -3,17 +3,17 @@ About bmi-cxx-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bmi-cxx-feedstock/blob/main/LICENSE.txt)
 
-Home: https://bmi.readthedocs.io
+Home: https://csdms.colorado.edu/wiki/BMI
 
 Package license: MIT
 
-Summary: C++ specification for the Basic Model Interface
+Summary: C++ mappings for the Basic Model Interface
 
 Development: https://github.com/csdms/bmi-cxx
 
 Documentation: https://bmi.readthedocs.io
 
-C++ bindings for the CSDMS Basic Model Interface (BMI). This package
+C++ mappings for the CSDMS Basic Model Interface (BMI). This package
 includes a header file with an interface to be implemented by a
 model developer when they add a BMI to their model.
 
@@ -40,6 +40,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8648&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bmi-cxx-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=8648&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bmi-cxx-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -144,7 +151,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance

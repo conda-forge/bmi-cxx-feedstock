@@ -10,13 +10,14 @@ source:
   sha256: a14ad573bf57203c125552b6ff3deeab6cbe6c9e4935d090d65e175ed4dbfbdd
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
   build:
     - cmake
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - make  # [unix]
 
 test:
@@ -27,13 +28,13 @@ test:
     - if not exist %LIBRARY_LIB%\\pkgconfig\\bmicxx.pc exit 1  # [win]
 
 about:
-  home: https://bmi.readthedocs.io
+  home: https://csdms.colorado.edu/wiki/BMI
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'C++ specification for the Basic Model Interface'
+  summary: 'C++ mappings for the Basic Model Interface'
   description: |
-    C++ bindings for the CSDMS Basic Model Interface (BMI). This package
+    C++ mappings for the CSDMS Basic Model Interface (BMI). This package
     includes a header file with an interface to be implemented by a
     model developer when they add a BMI to their model.
   doc_url: https://bmi.readthedocs.io
